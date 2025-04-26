@@ -22,6 +22,8 @@ body{
 
 .paginas:hover{
     font-size: 21px;
+    text-decoration: underline #007BFF;
+    text-underline-offset: 10px;
 }
 
 header {
@@ -38,16 +40,16 @@ header a:hover {
 .contato{
     background:#608BC0;
     border-radius: 20px;
-    margin-left: 15px; /* Espaçamento entre os links */
-    text-decoration: none; /* Remove o sublinhado */
+    margin-left: 15px; /* Espaçamento entre os links */ /* Remove o sublinhado */
     color: black; /* Ajuste a cor conforme necessário */
     width: 100px;
     height: 30px;
     text-align: center;
-    padding-top: 10px;
+    border: none; /* Remove a borda */
 }
 
 .contato:hover{
+    cursor: pointer;
     background: #007BFF; /* Cor ao passar o mouse */
     color: white; /* Ajuste a cor conforme necessário */
     size: 21px;
@@ -118,4 +120,68 @@ footer{
     color: white; /* Cor do texto no footer */
     font-size: 20px; /* Tamanho da fonte no footer */
     margin-top: 20vh; /* Espaçamento acima do footer */
+}
+
+.contatoBox{
+    margin-top: -500px;
+    margin-left: 960px;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatoBox.open{
+    opacity: 1;
+    z-index: 999;
+}
+
+.innerContatoBox{
+    background: white;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.849);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.zap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#fecharBox{
+    background:#608BC0;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-left: -250px; /* Espaçamento entre os links */ /* Remove o sublinhado */
+    color: black; /* Ajuste a cor conforme necessário */
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: none;
+}
+
+#fecharBox:hover{
+    cursor: pointer;
+    background: #007BFF; /* Cor ao passar o mouse */
+    color: white; /* Ajuste a cor conforme necessário */
+    size: 21px;
+}
+
+#cbxTitulo{
+    color: #153D84;
+    
 }
