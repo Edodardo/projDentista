@@ -4,9 +4,6 @@
 
 }
 
-
-
-
 *{
     
     font-family: 'Poppins', sans-serif;
@@ -14,7 +11,7 @@
 }
 
 body{
-    background: #EEEEFF;
+    background: #ffffff;
 }
 #logo{
     margin-left: -80px;
