@@ -1,3 +1,12 @@
+:root{
+    --corprimaria: #143083;
+    --corsecundaria: #3c1e67;
+
+}
+
+
+
+
 *{
     
     font-family: 'Poppins', sans-serif;
@@ -5,8 +14,7 @@
 }
 
 body{
-    background: #cfcfcf;
-    background: linear-gradient(90deg, rgba(207, 207, 207, 1) 0%, rgba(255, 255, 255, 1) 2%, rgba(255, 255, 255, 1) 98%, rgba(207, 207, 207, 1) 100%);
+    background: #EEEEFF;
 }
 #logo{
     margin-left: -80px;
@@ -62,7 +70,7 @@ header a:hover {
 
 #titulo{
     font-size: 60px;
-    color: #153D84;
+    color: var(--corprimaria);
     margin-top: 10vh;
     margin-left: 20vh;
 }
@@ -82,7 +90,7 @@ header a:hover {
 }
 
 .botao-servicos{
-    background:#608BC0;
+    background: var(--corsecundaria);
     border-radius: 20px;
     text-decoration: none; /* Remove o sublinhado */
     color: white; /* Ajuste a cor conforme necessário */
