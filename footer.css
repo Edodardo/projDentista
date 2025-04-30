@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajuste a altura do footer conforme necessário */
+    background-color: #608BC0; /* Cor de fundo do footer */
+    color: white; /* Cor do texto no footer */
+    font-size: 20px; /* Tamanho da fonte no footer */
+    margin-top: 20vh; /* Espaçamento acima do footer */
+}
