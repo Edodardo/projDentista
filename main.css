@@ -3,14 +3,20 @@
 :root{
     --corprimaria: #143083;
     --corsecundaria: #2b499c;
+    --cordetalhes: #a8c6f169;
+    --fontetextos: "Nunito", sans-serif;
 
 }
 body{
-    background: #ecf8f8;
+    margin: 0;
+    padding: 0;
 }
 
+.paginaInicial{
+    padding-bottom: 10rem;
+    background: #ffffff;
 
-
+}
 #titulo{
     font-family: "Montserrat Alternates", sans-serif;
 }
@@ -20,11 +26,6 @@ body{
     width: 150px;
     height: auto;
 }
-
-
-
-
-
 #titulo{
     font-size: 4rem;
     color: var(--corprimaria);
@@ -40,8 +41,13 @@ body{
 
 }
   
+.imagem{
+    padding: 1.5rem;
+}
+
+
 #fachada{
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: 1rem; 
     box-shadow: 0 0 10px rgba(7, 43, 80, 0.599); 
@@ -102,49 +108,109 @@ body{
     justify-content: center;
 }
 
-.contatoBox.open{
-    opacity: 1;
-    z-index: 999;
-}
-
-.innerContatoBox{
-    background: white;
-    width: 400px;
-    height: 200px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.849);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.zap{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#fecharBox{
-    background:#608BC0;
-    border-radius: 20px;
-    margin-left: 500px;
-    margin-left: -250px; /* Espaçamento entre os links */ /* Remove o sublinhado */
-    color: black; /* Ajuste a cor conforme necessário */
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    border: none;
-}
-
-#fecharBox:hover{
-    cursor: pointer;
-    background: #007BFF; /* Cor ao passar o mouse */
-    color: white; /* Ajuste a cor conforme necessário */
-    size: 21px;
-}
 
 #cbxTitulo{
     color: #153D84;
     
 }
+/*seçao 1*/
+
+.horariosAgendamentos{
+    padding-top:5rem;
+    background-color: var(--corprimaria);
+    width: auto;
+
+}
+.containerDois{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    width: 100%;
+    padding: 2rem 1rem;
+    align-items: stretch;
+
+}
+
+.box1{
+    background-color: var(--cordetalhes);
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+.box{
+    width: 300px; /* mesma largura */
+    min-height: 350px; /* mesma altura mínima */
+    background-color: #d9eaff;
+    border-radius: 2rem ;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(68, 130, 255, 0.268);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontetextos);
+    justify-content: space-between;
+      
+}
+.box h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+  
+  .button {
+    background-color: var(--corsecundaria);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+.divisor{
+    margin: 10px 0;
+    height: 1px;
+    background-color: #000000;
+    border: none;
+}
+ 
+  .linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+  .dias{
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;    
+    margin: 0.5rem;
+}
+
+
+  .horario {
+    background-color: #91c0fd3f;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: inline-block;
+    min-width: 90px; /* garante largura proporcional */
+    text-align: center;
+  }
+
+ 
