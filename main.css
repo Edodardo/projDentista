@@ -224,4 +224,41 @@ body{
     text-align: center;
   }
 
- 
+  @media screen and (max-width: 768px) {
+    .containerDois {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .box {
+        width: 90%; /* Ajusta a largura para telas menores */
+        max-width: none; /* Remove o limite máximo */
+    }
+    .horariosAgendamentos{
+        padding-top: 0rem;
+        width: 100%;
+    }
+    
+  }
+
+  .mapa{
+    position:relative;
+    margin-top: 5rem;
+    margin-left: 10rem;
+}
+
+.endereco{
+    text-align: center;
+    background-color: var(--cordetalhes);
+    width: 550px;
+    margin-left: 50rem;
+    margin-top: -28rem;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+}
+.containerTres{
+    padding: 1px;
+    height: 600px;
+    background-color: var(--cordetalhes);
+}
