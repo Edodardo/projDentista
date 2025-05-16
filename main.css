@@ -104,11 +104,12 @@ body {
 #cbxTitulo {
   color: #153d84;
 }
-/*seçao 2*/
+/*AGENDAMENTOS E FUNCIONAMENTO*/
+
 
 .horariosAgendamentos {
+  background: linear-gradient(135deg, #0f2c74, #1e3fa3, #4d619e);
   padding-top: 5rem;
-  background-color: var(--corprimaria);
   height: 80vh;
 }
 .containerDois {
@@ -139,6 +140,9 @@ body {
   flex: 0.5;
   flex-direction: column;
 }
+
+
+
 .box1 h3 {
   display: flex;
   font-size: 2rem;
@@ -151,9 +155,22 @@ body {
   font-size: 1.5rem;
 }
 
+
 .box2 h3 {
   font-size: 2rem;
   text-align: center;
+}
+
+.titulo-box{
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+  justify-content: center;
+}
+
+.titulo-box i {
+  font-size: 2rem;
+  color: var(--corprimaria); /* azul da sua paleta */
 }
 
 .agendar {
@@ -214,49 +231,9 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
-  @media screen and (max-width: 768px) {
-    .containerDois {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .box {
-        width: 90%; /* Ajusta a largura para telas menores */
-        max-width: none; /* Remove o limite máximo */
-    }
-    .horariosAgendamentos{
-        padding-top: 0rem;
-        width: 100%;
-    }
-    
-  }
-
-  .mapa{
-    position:relative;
-    margin-top: 5rem;
-    margin-left: 10rem;
-}
-
-.endereco{
-    text-align: center;
-    background-color: var(--cordetalhes);
-    width: 550px;
-    margin-left: 50rem;
-    margin-top: -28rem;
-    border-radius: 10px;
-    font-family: 'Nunito', sans-serif;
-    padding: 10px;
-}
-.containerTres{
-    padding: 1px;
-    height: 600px;
-    background-color: var(--cordetalhes);
-}
-=======
 /**ABA SOBRE NOS**/
 .sobreNos {
-  background-color: #e9f3ff;
+  background: linear-gradient(135deg, #ccdcef, #f1f6ff);
   padding: 60px 20px;
   text-align: center;
 }
@@ -300,12 +277,16 @@ body {
 }
 
 .fotoSobre {
+  
   flex: 1;
   max-width: 500px;
   text-align: center;
 }
 
 .fotoSobre img {
+box-shadow: 8px 8px rgba(20, 48, 131, 0.668)
+
+;
   width: 100%;
   border-radius: 15px;
 }
@@ -322,4 +303,3 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
 }
->>>>>>> fe3d94c (abasobrenos e  alteraçoes)
