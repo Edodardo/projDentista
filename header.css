@@ -36,8 +36,8 @@ header {
 
 .contato:hover{
     cursor: pointer;
-    background: #007BFF; /* Cor ao passar o mouse */
-    color: white; /* Ajuste a cor conforme necessário */
+    background: var(--corprimaria); 
+    color: white;
     size: 21px;
 }
 
