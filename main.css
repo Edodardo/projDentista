@@ -5,6 +5,8 @@
     --corsecundaria: #2b499c;
     --cordetalhes: #a8c6f169;
     --fontetextos: "Nunito", sans-serif;
+    --fontetitulos:"Montserrat Alternates", sans-serif;
+
 
 }
 body{
@@ -177,6 +179,9 @@ body{
     width: 90%;
   }
 
+.agendar:hover{
+    background-color: var(--corprimaria);
+}
   .linkagendar{
     color: white;
     font-size: 1.5rem;
@@ -224,6 +229,7 @@ body{
     text-align: center;
   }
 
+<<<<<<< HEAD
   @media screen and (max-width: 768px) {
     .containerDois {
         flex-direction: column;
@@ -262,3 +268,74 @@ body{
     height: 600px;
     background-color: var(--cordetalhes);
 }
+=======
+ /**ABA SOBRE NOS**/
+.sobreNos {
+  background-color: #e9f3ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sobreNos h1 {
+  color: var(--corprimaria);
+  font-family: var(--fontetextos);
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.sobreNos h2 {
+  font-family: var(--fontetitulos);
+  color: var(--corprimaria);
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.conteudoSobre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* <-- Alteração para alinhamento vertical */
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.textoSobre {
+  font-family: var(--fontetextos);
+  flex: 1;
+  max-width: 450px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.fotoSobre {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.fotoSobre img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.fotoSobre h4 {
+  font-family: var(--fontetextos);
+  color: var(--corprimaria);
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.fotoSobre .cro {
+  font-family: var(--fontetextos);
+  font-size: 1rem;
+  font-weight: bold;
+}
+>>>>>>> fe3d94c (abasobrenos e algumas alteraçoes)
